@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahendranath | Publications</title>
+  <style>
+    /* General styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    nav {
+      background: #34495e;
+      display: flex;
+      justify-content: center;
+      padding: 0.8rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1.2rem;
+      margin: 0 0.5rem;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #4a6278;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #2c3e50;
+      color: #ecf0f1;
+    }
+
+    /* Publications specific styles */
+    h2 {
+      color: #2c3e50;
+      margin: 2rem 0 1rem 0;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #eaeaea;
+    }
+
+    .pub-list {
+      list-style: none;
+      padding: 0;
+      margin: 1.5rem 0;
+      counter-reset: publication-counter 4; /* 设置初始计数器值为总项数 */
+    }
+
+    .pub-item {
+      padding: 1rem 0 1rem 3rem;
+      margin-bottom: 0.5rem;
+      border-bottom: 1px solid #eee;
+      position: relative;
+    }
+
+    .pub-item:last-child {
+      border-bottom: none;
+    }
+
+    .pub-item::before {
+      counter-increment: publication-counter -1; /* 递减计数器 */
+      content: counter(publication-counter) ".";
+      position: absolute;
+      left: 0.8rem;
+      font-weight: bold;
+      color: #3498db;
+      width: 2rem;
+      text-align: right;
+    }
+
+    .authors {
+      font-weight: 500;
+      color: #2c3e50;
+      font-size: 0.95rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .title {
+      margin: 0.4rem 0;
+      color: #34495e;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .journal {
+      color: #16a085;
+      font-size: 0.9rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .details {
+      color: #7f8c8d;
+      font-size: 0.85rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .links a {
+      color: #3498db;
+      text-decoration: none;
+      font-size: 0.85rem;
+      margin-right: 1rem;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    /* No numbering for preprints */
+    .no-numbers {
+      list-style: none;
+      padding-left: 0;
+      counter-reset: none;
+    }
+    
+    .no-numbers .pub-item {
+      padding-left: 0;
+    }
+    
+    .no-numbers .pub-item::before {
+      content: none;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+      }
+      
+      nav a {
+        margin: 0.3rem 0;
+        width: 100%;
+        text-align: center;
+      }
+      
+      main {
+        padding: 1.5rem;
+        margin: 1rem;
+      }
+      
+      .pub-item {
+        padding: 1rem 0 1rem 2.5rem;
+      }
+      
+      .pub-item::before {
+        left: 0.5rem;
+      }
+      
+      .no-numbers .pub-item {
+        padding-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mahendranath | Publications</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="teaching.html">Professional Experience</a>
+    <a href="publications.html">Publications</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h2>Preprints</h2>
+    <ul class="pub-list no-numbers">
+      <li class="pub-item">
+        <div class="authors">Huang, Bingkang; Perisetti, Mahendranath</div>
+        <div class="title">Time-periodic solutions to the full compressible magnetohydrodynamic flows with non-homogeneous Dirichlet boundary conditions</div>
+        <div class="journal">Preprint, 2025</div>
+        <div class="links">
+          <a href="https://www.math.cas.cz/public/storage/preprints/IM_20250721012554.pdf" target="_blank">PDF</a>
+        </div>
+      </li>
+    </ul>
+
+    <h2>Publications</h2>
+    <ul class="pub-list">
+
+      
+      <li class="pub-item">
+        <div class="authors">Neustapa, Jiri; Perisetti, Mahendranath; Yang, Minsuk</div>
+        <div class="title">On steady solutions to the MHD equations with inhomogeneous generalized impermeability boundary conditions for the magnetic field</div>
+        <div class="journal">Math. Methods Appl. Sci.</div>
+        <div class="details">47 (2024), no. 18, 14005-14023;</div>
+        <div class="links">
+        <a href="https://onlinelibrary.wiley.com/doi/10.1002/mma.10252" target="_blank">Journal Link</a>
+      </li>
+      <li class="pub-item">
+        <div class="authors">Biswas, Tania; Dharmatti, Sheetal; Mohan, Manil. T; Perisetti, Mahendranath</div>
+        <div class="title">On the stationary nonlocal Cahn-Hilliard-Navier-Stokes system: existence, uniqueness and exponential stability</div>
+        <div class="journal">Asymptot. Anal.</div>
+        <div class="details">125 (2021), no. 1-2, 59-99;</div>
+        <div class="links">
+        <a href="https://journals.sagepub.com/doi/10.3233/ASY-201650" target="_blank">Journal Link</a>
+       </div>
+      </li>
+      <li class="pub-item">
+        <div class="authors">Dharmatti, Sheetal; Perisetti Mahendranath</div>
+        <div class="title">Nonlocal Cahn-Hilliard-Brinkman system with regular potential: regularity and optimal control</div>
+        <div class="journal"> J. Dyn. Control Syst.</div>
+        <div class="details">27 (2021), no. 2, 221-246</div>
+        <div class="links">
+        <a href="https://link.springer.com/article/10.1007/s10883-020-09490-6" target="_blank">Journal Link</a>
+      </li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mahendranath Perisetti</p>
+  </footer>
+</body>
+</html>
